@@ -15,3 +15,25 @@ class CNNModel:
         model.add(layers.Dense(8, activation='softmax'))
         model.compile(loss='categorical_crossentropy',optimizer='adam',metrics=['accuracy'])
         return model
+    @staticmethod
+    def createsentimentLTSMmodel(max_features):
+        model = models.Sequential()
+        model.add(layers.Embedding(max_features, 128,input_length = 45))
+        model.add(layers.LSTM(128, dropout=0.2, recurrent_dropout=0.2))
+        model.add(layers.Dense(5,activation='softmax'))
+        model.compile(loss = 'categorical_crossentropy', optimizer='adam',metrics = ['accuracy'])
+        return model  
+    @staticmethod
+    def createsentimentCNNmodel(max_features):
+        model = models.Sequential()
+        model.add(layers.Embedding(max_features, 128,input_length = 45))
+        model.add(layers.Flatten())
+        model.add(layers.Dense(32,activation='relu'))    
+        model.add(layers.Dropout(rate=0.2))
+        model.add(layers.Dense(64,activation='relu'))    
+        model.add(layers.Dropout(rate=0.33))
+        model.add(layers.Dense(256, activation='relu'))
+        model.add(layers.Dropout(rate=0.5))
+        model.add(layers.Dense(5,activation='softmax'))
+        model.compile(loss = 'categorical_crossentropy', optimizer='adam',metrics = ['accuracy'])
+        return model  

@@ -1,0 +1,70 @@
+PS C:\Users\Trevor\Documents\GitHub\CS490-ML-Lab2> & C:/Users/Trevor/.conda/envs/ML/python.exe c:/Users/Trevor/Documents/GitHub/CS490-ML-Lab2/Question4.py
+Using TensorFlow backend.
+2020-05-03 15:25:25.340508: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library cudart64_100.dll
+WARNING:tensorflow:From C:\Users\Trevor\.conda\envs\ML\lib\site-packages\tensorflow_core\python\ops\resource_variable_ops.py:1630: calling BaseResourceVariable.__init__ (from tensorflow.python.ops.resource_variable_ops) with constraint is deprecated and will be removed in a future version.
+Instructions for updating:
+If using Keras pass *_constraint arguments to layers.
+2020-05-03 15:25:32.561075: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library nvcuda.dll
+2020-05-03 15:25:32.589517: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1618] Found device 0 with properties: 
+name: GeForce GTX 1070 major: 6 minor: 1 memoryClockRate(GHz): 1.683
+pciBusID: 0000:06:00.0
+2020-05-03 15:25:32.599053: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library cudart64_100.dll
+2020-05-03 15:25:32.607967: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library cublas64_100.dll
+2020-05-03 15:25:32.614754: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library cufft64_100.dll
+2020-05-03 15:25:32.629487: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library curand64_100.dll
+2020-05-03 15:25:32.637259: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library cusolver64_100.dll
+2020-05-03 15:25:32.652639: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library cusparse64_100.dll
+2020-05-03 15:25:32.672242: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library cudnn64_7.dll
+2020-05-03 15:25:32.682032: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1746] Adding visible gpu devices: 0
+2020-05-03 15:25:32.696045: I tensorflow/core/platform/cpu_feature_guard.cc:142] Your CPU supports instructions that this TensorFlow binary was not compiled to use: AVX2
+2020-05-03 15:25:32.714744: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1618] Found device 0 with properties: 
+name: GeForce GTX 1070 major: 6 minor: 1 memoryClockRate(GHz): 1.683
+pciBusID: 0000:06:00.0
+2020-05-03 15:25:32.732211: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library cudart64_100.dll
+2020-05-03 15:25:32.746471: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library cublas64_100.dll
+2020-05-03 15:25:32.762720: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library cufft64_100.dll
+2020-05-03 15:25:32.765921: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library curand64_100.dll
+2020-05-03 15:25:32.779460: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library cusolver64_100.dll
+2020-05-03 15:25:32.782630: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library cusparse64_100.dll
+2020-05-03 15:25:32.798261: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library cudnn64_7.dll
+2020-05-03 15:25:32.802292: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1746] Adding visible gpu devices: 0
+2020-05-03 15:25:33.360165: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1159] Device interconnect StreamExecutor with strength 1 edge matrix:
+2020-05-03 15:25:33.363423: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1165]      0
+2020-05-03 15:25:33.365356: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1178] 0:   N
+2020-05-03 15:25:33.368602: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1304] Created TensorFlow device (/job:localhost/replica:0/task:0/device:GPU:0 with 6382 MB memory) -> physical GPU (device: 0, name: GeForce GTX 1070, pci bus id: 0000:06:00.0, compute capability: 6.1)
+WARNING:tensorflow:From C:\Users\Trevor\.conda\envs\ML\lib\site-packages\keras\backend\tensorflow_backend.py:422: The name tf.global_variables is deprecated. Please use tf.compat.v1.global_variables 
+instead.
+
+Epoch 1/7
+2020-05-03 15:25:34.423750: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library cublas64_100.dll
+104560/104560 [==============================] - 13s 125us/step - loss: 1.1734 - accuracy: 0.5398
+Epoch 2/7
+104560/104560 [==============================] - 13s 122us/step - loss: 1.0425 - accuracy: 0.5953
+Epoch 3/7
+104560/104560 [==============================] - 13s 122us/step - loss: 0.9696 - accuracy: 0.6215
+Epoch 4/7
+104560/104560 [==============================] - 13s 122us/step - loss: 0.9320 - accuracy: 0.6362
+Epoch 5/7
+104560/104560 [==============================] - 13s 123us/step - loss: 0.9071 - accuracy: 0.6467
+Epoch 6/7
+104560/104560 [==============================] - 13s 122us/step - loss: 0.8859 - accuracy: 0.6560
+Epoch 7/7
+104560/104560 [==============================] - 13s 123us/step - loss: 0.8715 - accuracy: 0.6596
+Epoch 1/7
+104560/104560 [==============================] - 141s 1ms/step - loss: 1.0457 - accuracy: 0.5882
+Epoch 2/7
+104560/104560 [==============================] - 141s 1ms/step - loss: 0.9533 - accuracy: 0.6233
+Epoch 3/7
+104560/104560 [==============================] - 142s 1ms/step - loss: 0.9180 - accuracy: 0.6388
+Epoch 4/7
+104560/104560 [==============================] - 141s 1ms/step - loss: 0.8897 - accuracy: 0.6491
+Epoch 5/7
+104560/104560 [==============================] - 142s 1ms/step - loss: 0.8677 - accuracy: 0.6578
+Epoch 6/7
+104560/104560 [==============================] - 142s 1ms/step - loss: 0.8473 - accuracy: 0.6656
+Epoch 7/7
+104560/104560 [==============================] - 141s 1ms/step - loss: 0.8298 - accuracy: 0.6731
+Score of CNN Model 0.96
+Accuracy of CNN Model 0.62
+Score of TLSM Model 0.93
+Accuracy of LTSM Model 0.64
