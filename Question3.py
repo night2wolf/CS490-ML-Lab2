@@ -33,15 +33,15 @@ y_categories = to_categorical(y_encoded)
 X_train, X_test, Y_train, Y_test = train_test_split(x_data,y_categories, test_size = 0.2)
 model = CNNModel.generateModel(x_data)
 history = model.fit(X_train,Y_train, epochs=25, validation_split=0.2)
-# Plot training & validation accuracy / loss values
-plt.plot(history.history['acc'])
-plt.plot(history.history['val_acc'])
+print(history.history.keys())
+# Plot training & validation accuracy values
+plt.plot(history.history['accuracy'])
+plt.plot(history.history['val_accuracy'])
 plt.title('Model Accuracy')
 plt.ylabel('Accuracy')
 plt.xlabel('Epoch')
 plt.legend(['Train', 'Test'], loc='upper left')
 plt.show()
-
 # Plot training & validation loss values
 plt.plot(history.history['loss'])
 plt.plot(history.history['val_loss'])
