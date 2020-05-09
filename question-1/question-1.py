@@ -94,6 +94,7 @@ for key in history.history:
     plt.xlabel('Epoch')
     file_name = model_name + "_" + key + ".png"
     plt.savefig("output\\" + file_name)
+    plt.cla()
     # plt.show()
 
 # increase learning rate
@@ -137,6 +138,7 @@ for key in history.history:
     plt.xlabel('Epoch')
     file_name = model_name + "_" + key + ".png"
     plt.savefig("output\\" + file_name)
+    plt.cla()
     # plt.show()
 
 # increase batch size
@@ -179,6 +181,7 @@ for key in history.history:
     plt.xlabel('Epoch')
     file_name = model_name + "_" + key + ".png"
     plt.savefig("output\\" + file_name)
+    plt.cla()
     # plt.show()
 
 # change optimizer
@@ -224,6 +227,7 @@ for key in history.history:
     plt.xlabel('Epoch')
     file_name = model_name + "_" + key + ".png"
     plt.savefig("output\\" + file_name)
+    plt.cla()
     # plt.show()
 
 # Change activation function
@@ -266,6 +270,7 @@ for key in history.history:
     plt.xlabel('Epoch')
     file_name = model_name + "_" + key + ".png"
     plt.savefig("output\\" + file_name)
+    plt.cla()
     # plt.show()
 
 out_file.close()
